@@ -1,0 +1,25 @@
+
+<form action="<%= session_url %>" method="post">
+  auth_token
+  <label for="user_name">Username:</label>
+  <input
+    type="text"
+    name="user[user_name]"
+    id="user_name"
+    value="">
+  <br>
+  <br>
+  <label for="password">Password: </label>
+  <input
+    type="text"
+    name="user[password]"
+    id="password"
+    value="">
+  <br>
+  <br>
+
+  <input type="submit" value="Log in">
+
+  <% content_for :footer do  %>
+    Please log in here
+  <% end %>
